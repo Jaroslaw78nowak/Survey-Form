@@ -1,0 +1,154 @@
+<html lang="en">
+<head>
+  <title>Survey Form</title> 
+</head>
+<body>
+  <style type="text/css">
+  body {
+    background-color: #ffff66;
+}
+
+.main {
+    background-color: orange;
+    border-radius: 5px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding: 0 10% 2.5% 10%;
+}
+
+#title {
+    font-size: 4em ;
+    text-align: center;
+    padding-top: 1em;
+}
+
+#description {
+    text-align: center;
+    padding-top: 1.5em;
+}
+
+#submit {
+    display: block;
+    margin: auto;
+}
+
+#number {
+  width: 50%;
+}
+h1{
+  color: red;
+}
+</style>
+  <h1 id="title">Online Shopping Survey</h1>
+
+  <div class="container main">
+    <p id="description">Please take a few minutes to fill out this research survey</p>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name:</label>
+        <input type="text" id="name" class="form-control" name="name"  placeholder="Enter your name" required>
+      </div>
+      <p></p>
+      <div class="form-group">
+        <label id="email-label" for="email">Email:</label>
+        <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email address" required>
+      </div>
+      <p></p>
+      <div class="form-group">
+        <label id="number-label" for="age">Age:</label>
+        <input type="number" class="form-control" name="age" min="12" max="114" id="number" placeholder="Enter your age">
+      </div>
+      <p></p>
+      <div class="form-group">
+          <label for="role">Which option best describes your current role?</label>
+          <select class="form-control" id="dropdown">
+            <option value="Student" selected>Student</option>
+            <option value="full-time-job">Full time job</option>
+            <option value="full-time-manager">Full time manager</option>
+            <option value="not-to-say">Prefer not to say</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      <p></p>
+      <div class="form-group">
+        <label for="helpful">How likely is that you would recommend Online Shopping to a friend?</label>
+        <input type="radio" name="helpful" value="definitely" /> Definitely
+        <input type="radio" name="helpful" value="maybe" /> Maybe
+        <input type="radio" name="helpful" value="not-sure" /> Not Sure
+      </div>
+      <p></p>
+      <div class="form-group">
+        <label for="">What do you like most about Online Shopping</label>
+        <select class="form-control" name="" id="">
+          <option value="easy">Easy</option>
+          <option value="pay by credit card">Pay by credit card</option>
+          <option value="saving a lot of time">Saving a lot of time</option>
+          <option value="better prices">Better prices</option>
+        </select>
+      </div>
+      <p></p>
+      <!-- update to bootstrap standard -->
+      <div class="">
+        <label for="">What do you buy most often (Check all that apply):</label>
+        <p></p>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="shopping" value="electronics" id="electronics">
+          <label class="form-check-label" for="electronics">Electronics</label>
+        </div>
+        
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="shopping" value="multimedia" id="multimedia">
+          <label class="form-check-label" for="multimedia">Multimedia</label>
+        </div>
+        
+        <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="shopping" value="clothes" id="clothes">
+        <label class="form-check-label" for="clothes">Clothes</label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="shopping" value="books" id="books">
+          <label class="form-check-label" for="books">Books</label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="shopping" value="films" id="films">
+          <label class="form-check-label" for="films">Films</label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="shopping" value="foods" id="foods">
+          <label class="form-check-label" for="foods">Foods</label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="shopping" value="jewelry" id="jewelry">
+          <label class="form-check-label" for="jewelry">Jewelry</label>
+        </div>
+        
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="shopping" value="tools" id="tools">
+          <label class="form-check-label" for="tools">Tools</label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="shopping" value="plants" id="plants">
+          <label class="form-check-label" for="plants">Plants</label>
+        </div>
+
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="shopping" value="alcohol" id="alcohol">
+          <label class="form-check-label" for="alcohol">Alcohol</label>
+        </div>
+        <p></p>
+        <div class="form-group">
+          <label for="textarea">Any Comments or Suggestions?</label>
+          <textarea class="form-control" name="textarea" rows="3" cols="25">Enter your comments here</textarea>
+        </div>
+
+        <input id="submit" type="submit" class="btn btn-primary" value="Submit"></form>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
